@@ -29,6 +29,9 @@
             "Database\\Seeders\\": "database/seeders/"
         }
     },
+    "alias": {
+        "Helper": "App/Helpers/Helper::class"
+    },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"

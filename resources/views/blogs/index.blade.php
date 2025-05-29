@@ -20,6 +20,7 @@
             <thead>
                 <tr>
                     <th>Title</th>
+                    <th>Content</th>
                     <th>Author</th>
                     <th>Status</th>
                     @if(auth()->user()->isAuthor())
@@ -35,6 +36,7 @@
                 @foreach($blogs as $blog)
                     <tr id="blog-{{ $blog->id }}">
                         <td><a href="{{ route('blogs.show', $blog) }}">{{ $blog->title }}</a></td>
+                        <td>{{ \App\Helpers\Helper::truncateText($blog->content) }}</td>
                         <td>{{ $blog->author->name }}</td>
                         <td class="blog-status">{{ ucfirst($blog->status) }}</td>
                         @if(auth()->user()->isAuthor() && $blog->created_by == auth()->id())
