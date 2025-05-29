@@ -12,9 +12,6 @@
                 @if(auth()->user()->isAuthor())
                     <a href="{{ route('blogs.create') }}" class="btn btn-sm btn-primary">Create Blog</a>
                 @endif
-                @if(auth()->user()->isAdmin())
-                    <a href="{{ route('blogs.import_export_csv') }}" class="btn btn-sm btn-primary">Import/Export CSV</a>
-                @endif
             </div>
         </div>
     </div>

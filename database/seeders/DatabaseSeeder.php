@@ -25,44 +25,44 @@ class DatabaseSeeder extends Seeder
         ]);
 
         User::factory()->create([
-            'name' => 'Rabindranath Tagore',
+            'name' => 'Author1',
             'role' => 'author',
-            'email' => 'rabindranathtagore@blog.com',
+            'email' => 'author1@test.com',
             'password' => Hash::make('password'),
         ]);
 
         User::factory()->create([
-            'name' => 'Arundhati Roy',
+            'name' => 'Author2',
             'role' => 'author',
-            'email' => 'arundhatiroy@blog.com',
+            'email' => 'author2@test.com',
             'password' => Hash::make('password'),
         ]);
 
         User::factory()->create([
-            'name' => 'Vikram Seth',
+            'name' => 'Author3',
             'role' => 'author',
-            'email' => 'vikramseth@blog.com',
+            'email' => 'author3@test.com',
             'password' => Hash::make('password'),
         ]);
 
         User::factory()->create([
-            'name' => 'Tarak Mehta',
+            'name' => 'User1',
             'role' => 'user',
-            'email' => 'tarakmehta@user.com',
+            'email' => 'user1@test.com',
             'password' => Hash::make('password'),
         ]);
 
         User::factory()->create([
-            'name' => 'Mike Patel',
+            'name' => 'User2',
             'role' => 'user',
-            'email' => 'mikepatel@user.com',
+            'email' => 'user2@test.com',
             'password' => Hash::make('password'),
         ]);
 
         User::factory()->create([
-            'name' => 'Tony Patel',
+            'name' => 'User3',
             'role' => 'user',
-            'email' => 'tonypatel@user.com',
+            'email' => 'user3@test.com',
             'password' => Hash::make('password'),
         ]);
     }
